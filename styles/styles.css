@@ -1,0 +1,99 @@
+/*Table of Contents*/
+/*1.	Global Styles*/
+/*2.	Typography*/
+/*3.	Layout*/
+/*3.1	Reusables*/
+/*3.2	Other*/
+/*4.	Areas*/
+/*4.1	Header*/
+/*4.2	USP`s*/
+/*4.3	Quote*/
+/*5.	Media Queries*/
+
+
+/*1.	Global Styles*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+--paars: #5722CD;
+    --blauw: #4845E;
+    --roze: #ED4385;
+    --zwart: #0C0C0C;
+    --lichtpaars: #F2F0FF;
+    --lichtgrijs: #F3F6F9;
+    --grijs: #7A7A7A;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {font-family: 'Merriweather', serif;}
+h2 {font-family: 'Merriweather', serif;}
+h3 {font-family: 'Merriweather', serif;}
+p {font-family: 'Roboto', sans-serif;}
+
+
+
+
+/*2.	Typography*/
+
+/*3.	Layout*/
+
+
+
+
+/*3.1	Reusables*/
+
+.outercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+
+.innercontainer {
+    display: flex;
+    flex-basis: 1200px;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid pink;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 5px;
+    margin: 0 20px;
+    border: 2px solid blue;
+}
+
+ul {
+    list-style: none;
+    flex-basis: 300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*3.2	Other*/
+
+/*4.	Areas*/
+/*4.1	Header*/
+/*4.2	USP`s*/
+/*4.3	Quote*/
+/*5.	Media Queries*/
+
