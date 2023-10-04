@@ -70,7 +70,7 @@ header button {
 
 
     /*--introduction text start--*/
-.introductionTextFont {
+.purpleH2Text {
     font-size: 1.30em;
     color: var(--paars);
 }
@@ -84,23 +84,16 @@ main .insideInnerContainerIntroduction p {
 color: black;
 }
 
-main .linkPurple{
-    text-decoration: none;
-        font-weight: 500;
-        color: var(--paars);
-}
-
-
-
 /*--introduction text end--*/
-
 /*--Article Rollingstone start--*/
-.insideInnerContainerImageArticleRollingStone h2{
+
+
+.GreyBackground h2{
     font-size: 2em;
 }
 
-.insideInnerContainerImageArticleRollingStone p{
-    font-size: 1.3em;
+.GreyBackground p{
+    font-size: 1.25em;
 }
 
 .linkRollingstonePurple {
@@ -117,28 +110,30 @@ main .linkPurple{
 /*--Article Rollingstone end--*/
 
 
+main .brandingOuterSection h2{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--paars);
+}
 
-
-
-
-
-
-
-
-
+main .brandingOuterSection p{
+    margin: 2px 0 0 0;
+    font-size: 1em;
+    color: var(--grijs);
+}
 
 
 
 /*---------------Typography end---------------*/
 /*3.	Layout*/
 
+
+
 body {
     border: 2px solid purple;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
 
@@ -151,7 +146,7 @@ header {
 }
 
 header .outerContainerHeader {
-        border: #9b1111 2px solid;
+        /*border: #9b1111 2px solid;*/
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -161,7 +156,7 @@ header .outerContainerHeader {
 }
 
 header .outerContainerNav {
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -172,7 +167,7 @@ header .outerContainerNav {
 }
 
 header .NavUlContainer {
-    border: 2px solid purple;
+    /*border: 2px solid purple;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -185,7 +180,7 @@ header .NavUlContainer {
 }
 
 header .outerContainerHeaderExtra {
-    border: orange 2px solid;
+    /*border: orange 2px solid;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -193,12 +188,12 @@ header .outerContainerHeaderExtra {
 }
 
 header .innerContainerHeader {
-        border: greenyellow 2px solid;
+        /*border: greenyellow 2px solid;*/
         display: flex;
         flex-direction: column;
         /*width: 50vw;*/
-        flex-basis: 1200px;
         text-align: center;
+        flex-basis: 1200px;
         padding: 100px 115px 125px 115px;
 
 
@@ -221,13 +216,11 @@ header button {
         }
 
 .imagecontainerTopImage{
-    border: 2px solid turquoise;
+    /*border: 2px solid turquoise;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: -4vh 0 ;
-
-
 }
 
 img .topImage {
@@ -235,7 +228,6 @@ img .topImage {
     justify-content: center;
     max-width: 150px;
     max-height: 150px;
-
 }
 
 
@@ -248,38 +240,34 @@ main {
 
 /*-white section in main start-*/
 .outerContainerIntroduction {
-    border: deeppink 2px dashed;
+    /*border: deeppink 2px dashed;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     margin: 0 30px;
 }
 
 .innerContainerIntroduction {
-    border: red 2px dashed;
+    /*border: red 2px dashed;*/
     display: flex;
     flex-direction: row;
     flex-basis: 1200px;
-    height: 85vh; /*space between white/grey*/
+    height: 88vh; /*space between white/grey*/
     width: 40em;
 }
 
-
 .insideInnerContainerIntroduction {
-    border: black 2px dashed;
+    /*border: deeppink 2px dashed;*/
     display: flex;
     flex-direction: column;
     text-align: center;
-
-    padding: 100px 195px 110px 195px
+    padding: 120px 195px 110px 195px
 }
 
 
 
 /*-white section in main end-*/
 /*-light grey section in main start-*/
-
 
 main .GreyBackground {
     background-color: var(--lichtgrijs);
@@ -288,43 +276,181 @@ main .GreyBackground {
 /*-light grey section > Article Rolling stone start-*/
 
 
-.outerContainerImageArticles {
-    border: deeppink 2px solid;
+.outerContainerImageRollingStoneArticle {
+    /*border: deeppink 2px dashed;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 30px;
-
 }
-
-
 
 .innerContainerImageArticleRollingStone {
-    border: blue 2px solid;
+    /*border: turquoise 2px dashed;*/
     display: flex;
     flex-direction: row;
-    flex-basis: 1400px;
-    height: 287vh;
-    margin: 90px 0 0 0;
-
-
-}
-
-
-
-.insideInnerContainerImageArticleRollingStone {
-    border: yellow 2px solid;
-    display: flex;
-    flex-direction: row;
-    /*padding: 110px 195px;*/
     flex-grow: 1;
-
-
-
+    justify-content: space-between;
 }
 
 .articleRollingStoneTextFlexbox1 {
-    border: red 5px solid;
+    /*border: red 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 90px 0 0 ;
+}
+
+.articleRollingStoneTextFlexbox2 {
+    /*border: blue 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 1.2em 2.3em 0  3.4em ;
+    margin: 218px 0 0 10px;
+    width: 500px;
+}
+
+
+
+main section .flexImageLaptop {
+    /*border: forestgreen 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 85px 20px 0 0;
+}
+
+.waveLineImage {
+        display: flex;
+        justify-content: center;
+        padding: 22px 0 0 0;
+         max-width: 60px;
+}
+
+
+.flexImageLaptop {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    -webkit-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    }
+
+.ArticleImage {
+    width: 100%;
+
+}
+
+
+/*-light grey section > Article Rolling stone end-*/
+/*-light grey section > Variety start-*/
+
+
+.outerContainerImageVarietyArticle {
+    /*border: deeppink 2px dashed;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.innerContainerImageArticleVariety {
+    /*border: turquoise 2px dashed;*/
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.articleVarietyTextFlexbox1 {
+    /*border: red 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 90px 0 0 ;
+}
+
+.articleVarietyTextFlexbox2 {
+    /*border: blue 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 1.2em 0 0 8.25em ;
+    margin: 218px 0 0 0;
+    width: 500px;
+}
+
+main section .flexImageBook {
+    /*border: forestgreen 2px solid;*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 100px 20px 0 0;
+}
+
+.waveLineImage {
+    display: flex;
+    justify-content: center;
+    padding: 22px 0 0 0;
+    max-width: 60px;
+}
+
+
+.flexImageBook {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    -webkit-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+}
+
+.ArticleImage {
+    width: 100%;
+
+}
+
+
+
+/*-light grey section > Variety end-*/
+/*-light grey section > Worth start-*/
+
+.outerContainerImageWorthArticle {
+    border: deeppink 2px dashed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 30px 230px 30px;
+
+}
+
+
+
+.innerContainerImageArticleWorth {
+    /*border: turquoise 2px dashed;*/
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+
+
+.articleWorthTextFlexbox1 {
+    /*border: red 2px solid;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,61 +461,51 @@ main .GreyBackground {
     margin: 0 90px 0 0 ;
 }
 
-.articleRollingStoneTextFlexbox2 {
-    border: blue 2px solid;
+.articleWorthTextFlexbox2 {
+    /*border: blue 2px solid;*/
     display: flex;
     flex-direction: column;
     flex-basis: 400px;
-    padding: 0.6em 2.3em 0  3.4em ;
+    padding: 1.2em 2.3em 0  3.4em ;
+    margin: 218px 0 0 10px;
     width: 500px;
 }
 
 
 
-main section .flexImageLaptop {
-    border: forestgreen 5px solid;
+main section .flexImagePaper {
+    /*border: forestgreen 2px solid;*/
     display: flex;
     flex-direction: column;
     text-align: center;
     max-height: 600px;
     flex-grow: 0;
     flex-shrink: 1;
+    margin: 85px 20px 0 0;
+    -webkit-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    -moz-box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
+    box-shadow: -9px 39px 61px -46px rgba(0,0,0,0.75);
 }
 
 .waveLineImage {
-        display: flex;
-        justify-content: center;
-        padding: 22px 0 0 0;
-         max-width: 60px;
-        /*max-height: 100px;*/
+    display: flex;
+    justify-content: center;
+    padding: 22px 0 0 0;
+    max-width: 60px;
 
 }
 
 
-.flexImageLaptop {
+.flexImagePaper {
     flex-basis: 800px;
     flex-grow: 0;
     flex-shrink: 1;
-    }
+}
 
-.laptop-image {
+.ArticleImage {
     width: 100%;
 
 }
-
-
-/*-light grey section > Article Rolling stone end-*/
-/*-light grey section > Variety start-*/
-
-
-
-
-
-
-
-/*-light grey section > Variety end-*/
-/*-light grey section > Worth start-*/
-
 
 
 
@@ -398,6 +514,60 @@ main section .flexImageLaptop {
 
 /*-light grey section > Worth end-*/
 /*-light grey section in main end-*/
+/*-White section in main start-*/
+
+main .brandingOuterSection {
+    background-color: white;
+}
+
+.brandingOuterSection {
+    border: deeppink 2px dashed;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.brandingInnerSection {
+    border: green 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 80px 0;
+
+}
+
+
+.flexBlockWithIcon {
+    border: var(--paars) 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 380px;
+    margin: 1.2em 1.3em 1em 1.3em;
+    padding: 50px 20px 75px 40px;
+}
+
+
+.articleImage {
+        display: flex;
+        /*justify-content: center;*/
+        /*padding: 22px 0 0 0;*/
+        max-width: 80px;
+
+    }
+
+
+
+
+
+
+/*-White section in main end-*/
+/*main {*/
+/*    background-color: white;*/
+/*}*/
 
 
 
@@ -413,30 +583,12 @@ main section .flexImageLaptop {
 
 /*3.1	Reusables*/
 
-
-
-/*.imagecontainer{*/
-/*    display: flex;*/
-/*flex-direction: row;*/
-/*    padding: 50px;*/
-/*    justify-content: center;*/
+/*main {*/
+/*    background-color: white;*/
 /*}*/
 
-/*.outer-container {*/
-/*    display: flex;*/
-/*    border: #9b1111 2px solid;*/
-/*    justify-content: center;*/
-/*    flex-direction: row;*/
-/*    margin: 0 20px;*/
-/*}*/
 
-/*.inner-container {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    !*width: 50vw;*!*/
-/*    flex-basis: 600px;*/
-/*    text-align: center;*/
-/*    border: greenyellow 2px solid;*/
+
 
 
 
