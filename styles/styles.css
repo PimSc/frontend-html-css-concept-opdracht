@@ -18,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
---paars: #5722CD;
+    --paars: #5722CD;
     --blauw: #4845E;
     --roze: #ED4385;
     --zwart: #0C0C0C;
@@ -66,9 +66,7 @@ header button {
     font-weight: 500;
 }
 
-main .innerContainerIntroduction a {
-    text-decoration: none;
-}
+
 
 
     /*--introduction text start--*/
@@ -86,12 +84,48 @@ main .insideInnerContainerIntroduction p {
 color: black;
 }
 
-/*Link in de tekst*/
-main .insideInnerContainerIntroduction a{
+main .linkPurple{
+    text-decoration: none;
+        font-weight: 500;
+        color: var(--paars);
+}
+
+
+
+/*--introduction text end--*/
+
+/*--Article Rollingstone start--*/
+.insideInnerContainerImageArticleRollingStone h2{
+    font-size: 2em;
+}
+
+.insideInnerContainerImageArticleRollingStone p{
+    font-size: 1.3em;
+}
+
+.linkRollingstonePurple {
+    text-decoration: none;
     font-weight: 500;
     color: var(--paars);
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
 }
-/*--introduction text end--*/
+
+/*--Article Rollingstone end--*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -99,11 +133,12 @@ main .insideInnerContainerIntroduction a{
 /*3.	Layout*/
 
 body {
+    border: 2px solid purple;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    border: 2px solid purple;
+
 }
 
 
@@ -116,26 +151,28 @@ header {
 }
 
 header .outerContainerHeader {
+        border: #9b1111 2px solid;
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
         justify-content: center;
         margin: 0 0 40px 0;
 
-    border: #9b1111 2px solid;
+
 }
 
 header .outerContainerNav {
+    border: 2px solid blue;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 2px;
     margin: 15px 30px;
 
-    border: 2px solid blue;
+
 }
 
 header .NavUlContainer {
-
+    border: 2px solid purple;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -144,28 +181,28 @@ header .NavUlContainer {
     flex-grow: 0;
     flex-shrink: 1;
 
-    border: 2px solid purple;
+
 }
 
 header .outerContainerHeaderExtra {
+    border: orange 2px solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 30px ;
-
-    border: orange 2px solid;
 }
 
 header .innerContainerHeader {
+        border: greenyellow 2px solid;
         display: flex;
         flex-direction: column;
         /*width: 50vw;*/
         flex-basis: 1200px;
         text-align: center;
-        padding: 115px;
+        padding: 100px 115px 125px 115px;
 
 
-        border: greenyellow 2px solid;
+
     }
 
 
@@ -184,15 +221,16 @@ header button {
         }
 
 .imagecontainerTopImage{
+    border: 2px solid turquoise;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: -4vh 0 ;
 
-    border: 2px solid turquoise;
+
 }
 
-img {
+img .topImage {
     display: flex;
     justify-content: center;
     max-width: 150px;
@@ -210,28 +248,31 @@ main {
 
 /*-white section in main start-*/
 .outerContainerIntroduction {
+    border: deeppink 2px dashed;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: deeppink 2px dashed;
+
     margin: 0 30px;
 }
 
 .innerContainerIntroduction {
+    border: red 2px dashed;
     display: flex;
     flex-direction: row;
     flex-basis: 1200px;
-    border: red 2px dashed;
     height: 85vh; /*space between white/grey*/
+    width: 40em;
 }
 
 
 .insideInnerContainerIntroduction {
+    border: black 2px dashed;
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: black 2px dashed;
-    padding: 110px 195px
+
+    padding: 100px 195px 110px 195px
 }
 
 
@@ -244,36 +285,118 @@ main .GreyBackground {
     background-color: var(--lichtgrijs);
 }
 
+/*-light grey section > Article Rolling stone start-*/
+
 
 .outerContainerImageArticles {
+    border: deeppink 2px solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 30px;
-    border: deeppink 2px solid;
+
 }
 
-.innerContainerImageArticles {
+
+
+.innerContainerImageArticleRollingStone {
+    border: blue 2px solid;
     display: flex;
     flex-direction: row;
-    flex-basis: 1600px;
+    flex-basis: 1400px;
     height: 287vh;
+    margin: 90px 0 0 0;
 
-    border: blue 2px solid;
+
 }
 
-.insideInnerContainerImageArticles {
+
+
+.insideInnerContainerImageArticleRollingStone {
+    border: yellow 2px solid;
+    display: flex;
+    flex-direction: row;
+    /*padding: 110px 195px;*/
+    flex-grow: 1;
+
+
+
+}
+
+.articleRollingStoneTextFlexbox1 {
+    border: red 5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding: 30px 20px;*/
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 90px 0 0 ;
+}
+
+.articleRollingStoneTextFlexbox2 {
+    border: blue 2px solid;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 0.6em 2.3em 0  3.4em ;
+    width: 500px;
+}
+
+
+
+main section .flexImageLaptop {
+    border: forestgreen 5px solid;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 110px 195px;
-    flex-grow: 1;
+    max-height: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
 
-    border: black 2px solid;
+.waveLineImage {
+        display: flex;
+        justify-content: center;
+        padding: 22px 0 0 0;
+         max-width: 60px;
+        /*max-height: 100px;*/
 
 }
 
 
+.flexImageLaptop {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    }
+
+.laptop-image {
+    width: 100%;
+
+}
+
+
+/*-light grey section > Article Rolling stone end-*/
+/*-light grey section > Variety start-*/
+
+
+
+
+
+
+
+/*-light grey section > Variety end-*/
+/*-light grey section > Worth start-*/
+
+
+
+
+
+
+
+/*-light grey section > Worth end-*/
 /*-light grey section in main end-*/
 
 
