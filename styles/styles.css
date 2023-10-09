@@ -43,8 +43,11 @@
 h1 {font-family: 'Merriweather', serif;}
 h2 {font-family: 'Merriweather', serif;}
 h3 {font-family: 'Merriweather', serif;}
+label {font-family: 'Roboto', sans-serif;}
+button {font-family: 'Roboto', sans-serif;}
 p {font-family: 'Roboto', sans-serif;}
 li {font-family: 'Roboto', sans-serif;}
+footer .container {font-family: 'Roboto', sans-serif;}
 
 nav ul li {
     font-size: 1.3em;
@@ -122,6 +125,18 @@ main .brandingOuterSection p{
     color: var(--grijs);
 }
 
+/*---------------Footer start---------------*/
+
+footer .footerPaars{
+    background: linear-gradient(90deg, rgba(72,69,224,1) 0%, rgba(87,34,205,1) 100%);
+    color: white
+}
+
+footer .footerPaars h1{
+    font-size: 3em;
+}
+
+/*---------------Footer end---------------*/
 
 
 /*---------------Typography end---------------*/
@@ -524,7 +539,6 @@ main .brandingOuterSection {
     border: deeppink 2px dashed;
     flex-direction: column;
     display: flex;
-
 }
 
 .brandingInnerSection {
@@ -535,7 +549,6 @@ main .brandingOuterSection {
     flex-grow: 1;
     flex-wrap: wrap;
     padding: 80px 0;
-
 }
 
 
@@ -556,7 +569,6 @@ main .brandingOuterSection {
         /*justify-content: center;*/
         /*padding: 22px 0 0 0;*/
         max-width: 80px;
-
     }
 
 
@@ -573,12 +585,78 @@ main .brandingOuterSection {
 
 
 /*---------------Main end---------------*/
+/*---------------Footer start---------------*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    border: green 2px solid;
+}
 
 
 
+footer .footerPaars{
+background: linear-gradient(90deg, rgba(72,69,224,1) 0%, rgba(87,34,205,1) 100%);
+}
+
+footer .footerPaars{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-group textarea {
+    height: 150px;
+    width: 850px;
+}
 
 
+.form-group input[type="send"] {
+    background-color: var(--roze);
+    color: #fff;
+    border: none;
+    padding: 25px 20px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 5px 0 40px 0;
+}
 
+footer .sendButton {
+    text-align: center;
+}
+
+.blackBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    background-color: #0C0C0C;
+    color: white;
+}
+
+/*---------------Footer end---------------*/
 
 
 /*3.1	Reusables*/
